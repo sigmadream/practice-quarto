@@ -1,0 +1,39 @@
+project: 
+  type: website
+  output-dir: docs
+  
+website: 
+  page-navigation: true
+  title: "Quarto를 활용한 기술 블로그 작성 및 관리" 
+  site-url: "https://sigmadream.github.io/practice-quarto" 
+  repo-url: https://github.com/sigmadream/practice-quarto 
+  repo-actions: [edit, issue]
+  
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    left: "&copy; CC-By Sangkon Han, 2023"
+    
+  sidebar:
+    logo: "images/logo.png"
+    pinned: true
+    align: center
+    tools: 
+      - icon: github
+        href: https://sigmadream.github.io/practice-quarto
+        text: "practice-quarto"
+
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - href: index.qmd
+        text: Welcome
+
+format:
+  html:
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+
+filters:
+  - quarto
